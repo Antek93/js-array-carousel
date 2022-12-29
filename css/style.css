@@ -38,3 +38,33 @@ main {
 .current{
     display: block;
 }
+
+.buttons {
+    position: absolute;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.125);
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.next {
+    bottom: 0;
+    left: 50%;
+}
+
+.previous {
+    top: 0;
+    left: 50%;
+}
+
+.next:hover,
+.previous:hover {
+    background-color: rgba(255, 255, 255, 0.993);
+}
+
+.fa-solid {
+    padding: 16px;
+}
