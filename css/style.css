@@ -63,8 +63,13 @@ main {
 .next:hover,
 .previous:hover {
     background-color: rgba(255, 255, 255, 0.993);
+    cursor: pointer;
 }
 
 .fa-solid {
     padding: 16px;
+}
+
+.hidden {
+    visibility: hidden;
 }
