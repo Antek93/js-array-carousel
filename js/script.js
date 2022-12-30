@@ -132,34 +132,45 @@ previousArrow.addEventListener('click', // quando clicco su nextArrow:
 
         function() {
 
-        // Verifica se event funziona:
-            console.log('cliccato su Next')
-         
-        // rimuovo current dalla slide 0    
+            // Verifica se event funziona:
+                console.log('cliccato su Next')
+            
+            // rimuovo current dalla slide 0    
 
-        allSlide[current].classList.remove('current');
+            allSlide[current].classList.remove('current');
 
-        // modifico la variabile 0 con 0 - 1
+            // modifico la variabile 0 con 0 - 1
 
-        current = current - 1;
+            current = current - 1;
 
-        //aggiungo nuovamente current alla slide,
+            //aggiungo nuovamente current alla slide,
 
-        allSlide[current].classList.add('current');
+            allSlide[current].classList.add('current');
 
-        // SE RITORNO ALLA PRIMA SLIDE RITORNA IL VALORE HIDDEN alla freccia previous
-        // se (slide corrente = alla prima slide)
-        // lunghezza array = 5 (con zero compreso)
-        // 5 - 5 = slide 0 (prima slide)
+            // SE RITORNO ALLA PRIMA SLIDE RITORNA IL VALORE HIDDEN alla freccia previous
+            // se (slide corrente = alla prima slide)
+            // lunghezza array = 5 (con zero compreso)
+            // 5 - 5 = slide 0 (prima slide)
 
 
-        if (current == allSlide.length - 5) {
+            if (current == allSlide.length - 5) {
 
-            previousArrow.classList.add('hidden'); 
-    
+                previousArrow.classList.add('hidden'); 
+        
+                
             }
+
+            if (current == allSlide.length - 5) {
+
+                nextArrow.classList.remove('hidden'); 
+        
+                
+            } 
+
         
         }
+
+         // Dopo la slide 0 rimuovo sempre hidden dal tasto PREVIOUS
 
 )
  
