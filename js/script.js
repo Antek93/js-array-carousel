@@ -50,7 +50,7 @@ for (let i = 0; i < images.length; i++) { // a partire da 0 - fin quando i è mi
     // e non SOSTITUIRE (=) gli elementi da inserire
 
     carous.innerHTML += `<div class="slide">
-                            <img src="${images[i]}">
+                            <img src="${images[image]}">
                          </div>`
 
 
